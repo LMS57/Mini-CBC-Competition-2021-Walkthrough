@@ -6,7 +6,7 @@ Here is a quick walkthrough of the challenges, most of these writeups are from m
 
 The first challenge asks the user to join the discord server and post `!RFC2324`, in the general channel, then the CTF-Bot will give you the answer and a link to RFC2324.
 
-![discord](images\discord.jpg)
+![discord](images/discord.jpg)
 
 ### 1
 
@@ -14,7 +14,7 @@ In this challenge we are given a pcap and mention of RFC2324, *Hyper Text Coffee
 
 Opening the PCAP and searching for the string brew brings us to a tcp connection and after following it, we can see the method being invoked and that the Coffee Pot is at 192.168.1.83 and the computer is at 192.168.1.82
 
-![coffee](images\coffee.jpg)
+![coffee](images/coffee.jpg)
 
 ### 2
 
@@ -39,10 +39,10 @@ Given us the username and password: `Username: owenryan Password: 3_Ws0IYe8q`
 
 For this final challenge we are given a binary `challenge3_a_1.bin`, when I ran it I would get a segmentation fault but we are just going to ignore it and complete this challenge easily. Opening the file in Ida you can see several functions being called then several strcats follow with the memory locations that were used by the previous functions.
 
-![ida](images\ida.jpg)
+![ida](images/ida.jpg)
 
 Looking into these functions, we can see that strings are just loaded form memory and the strcats will combine them... incorrectly, but we don't care. Copying out all the strings from the functions in order and base64 decoding them, you get the solution.
 
-![base64](images\base64.jpg)
+![base64](images/base64.jpg)
 
 If you continue into the binary you can see another instance of what appears to be RSA occurring, but I didn't continue into it as this worked for the solution.
