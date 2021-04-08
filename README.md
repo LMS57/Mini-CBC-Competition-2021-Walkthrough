@@ -1,7 +1,3 @@
----
-typora-root-url: ./
----
-
 # CodeBreaker Challenge Mini CBC Competition 2021 Walkthrough
 
 Here is a quick walkthrough of the challenges, most of these writeups are from my memory as I didn't keep detailed notes. Some of these answers may differ slightly from user to user, so attached are the files used 
